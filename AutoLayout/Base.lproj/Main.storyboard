@@ -109,10 +109,44 @@
                         <viewControllerLayoutGuide type="top" id="h80-dL-PtW"/>
                         <viewControllerLayoutGuide type="bottom" id="WUE-e1-o68"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jim-Zd-xUF">
+                    <view key="view" contentMode="scaleToFill" id="9oJ-NG-rXC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-i9-NCB">
+                                <rect key="frame" x="0.0" y="64" width="300" height="268"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMt-Iy-K0g">
+                                <rect key="frame" x="300" y="64" width="300" height="268"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MV-Il-Ojv">
+                                <rect key="frame" x="300" y="332" width="300" height="268"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2I-3b-KIG">
+                                <rect key="frame" x="0.0" y="332" width="300" height="268"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="height" secondItem="0MV-Il-Ojv" secondAttribute="height" id="Et7-uw-dXu"/>
+                            <constraint firstItem="xMt-Iy-K0g" firstAttribute="top" secondItem="9oJ-NG-rXC" secondAttribute="top" constant="64" id="F1Q-ms-eFR"/>
+                            <constraint firstAttribute="trailing" secondItem="xMt-Iy-K0g" secondAttribute="trailing" id="GZW-bL-BEu"/>
+                            <constraint firstAttribute="trailing" secondItem="0MV-Il-Ojv" secondAttribute="trailing" id="OL8-d7-Ihl"/>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="height" secondItem="M5i-i9-NCB" secondAttribute="height" id="Quk-rm-m7J"/>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="width" secondItem="xMt-Iy-K0g" secondAttribute="width" id="TVM-sT-NEZ"/>
+                            <constraint firstAttribute="bottom" secondItem="S2I-3b-KIG" secondAttribute="bottom" id="TfP-Oo-J3a"/>
+                            <constraint firstItem="M5i-i9-NCB" firstAttribute="leading" secondItem="9oJ-NG-rXC" secondAttribute="leading" id="WuE-6J-OBs"/>
+                            <constraint firstItem="M5i-i9-NCB" firstAttribute="top" secondItem="9oJ-NG-rXC" secondAttribute="top" constant="64" id="hez-DR-fbq"/>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="height" secondItem="xMt-Iy-K0g" secondAttribute="height" id="mtA-fi-q2B"/>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="width" secondItem="0MV-Il-Ojv" secondAttribute="width" id="rLc-6c-xeC"/>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="leading" secondItem="9oJ-NG-rXC" secondAttribute="leading" id="rOy-KP-gYL"/>
+                            <constraint firstItem="S2I-3b-KIG" firstAttribute="width" secondItem="M5i-i9-NCB" secondAttribute="width" id="s00-wv-Mfe"/>
+                            <constraint firstAttribute="bottom" secondItem="0MV-Il-Ojv" secondAttribute="bottom" id="tQs-cb-bmF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Umd-cV-lF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
