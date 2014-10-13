@@ -186,16 +186,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7br-MY-07k">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7br-MY-07k">
                                 <rect key="frame" x="0.0" y="64" width="400" height="536"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ong-wz-hAP">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ong-wz-hAP">
                                 <rect key="frame" x="400" y="64" width="200" height="536"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ong-wz-hAP" firstAttribute="top" secondItem="Keo-nA-9kE" secondAttribute="top" constant="64" id="0nD-WA-YFU"/>
+                            <constraint firstAttribute="bottom" secondItem="7br-MY-07k" secondAttribute="bottom" id="5cQ-Th-HdC"/>
+                            <constraint firstItem="7br-MY-07k" firstAttribute="leading" secondItem="Keo-nA-9kE" secondAttribute="leading" id="6Oc-yd-aG3"/>
+                            <constraint firstAttribute="trailing" secondItem="Ong-wz-hAP" secondAttribute="trailing" id="K0t-I7-4Wo"/>
+                            <constraint firstItem="Ong-wz-hAP" firstAttribute="leading" secondItem="7br-MY-07k" secondAttribute="trailing" id="aMp-aq-RMj"/>
+                            <constraint firstAttribute="bottom" secondItem="Ong-wz-hAP" secondAttribute="bottom" id="fef-wQ-lVi"/>
+                            <constraint firstItem="7br-MY-07k" firstAttribute="top" secondItem="Keo-nA-9kE" secondAttribute="top" constant="64" id="n8x-cj-aLO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qab-6W-D33" userLabel="First Responder" sceneMemberID="firstResponder"/>
