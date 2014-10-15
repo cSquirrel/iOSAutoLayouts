@@ -228,25 +228,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77e-vG-YvJ">
-                                <rect key="frame" x="500" y="64" width="100" height="472"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdb-3C-Gy6">
-                                <rect key="frame" x="0.0" y="64" width="500" height="472"/>
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="536"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77e-vG-YvJ">
+                                <rect key="frame" x="500" y="0.0" width="100" height="536"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="x9v-FG-RIz"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="77e-vG-YvJ" firstAttribute="leading" secondItem="gdb-3C-Gy6" secondAttribute="trailing" id="0zm-pz-Gnf"/>
-                            <constraint firstAttribute="trailing" secondItem="77e-vG-YvJ" secondAttribute="trailing" id="1TW-6G-F1o"/>
-                            <constraint firstAttribute="trailing" secondItem="gdb-3C-Gy6" secondAttribute="trailing" constant="100" id="5JP-l0-VFK"/>
                             <constraint firstItem="gdb-3C-Gy6" firstAttribute="leading" secondItem="9oi-si-UZs" secondAttribute="leading" id="65x-V4-u0F"/>
                             <constraint firstAttribute="bottom" secondItem="77e-vG-YvJ" secondAttribute="bottom" id="6pg-cZ-bdN"/>
+                            <constraint firstAttribute="trailing" secondItem="77e-vG-YvJ" secondAttribute="trailing" id="Bax-Ab-C9j"/>
+                            <constraint firstItem="sTV-GP-s1l" firstAttribute="top" secondItem="77e-vG-YvJ" secondAttribute="bottom" id="Bgg-Ho-WQs"/>
                             <constraint firstAttribute="bottom" secondItem="gdb-3C-Gy6" secondAttribute="bottom" id="CZZ-Hf-HXL"/>
-                            <constraint firstItem="77e-vG-YvJ" firstAttribute="top" secondItem="9oi-si-UZs" secondAttribute="top" constant="64" id="MhE-zi-cK1"/>
-                            <constraint firstItem="gdb-3C-Gy6" firstAttribute="top" secondItem="9oi-si-UZs" secondAttribute="top" constant="64" id="tHK-6g-PGc"/>
+                            <constraint firstItem="gdb-3C-Gy6" firstAttribute="top" secondItem="w5h-op-LbO" secondAttribute="bottom" id="LK0-11-irq"/>
+                            <constraint firstItem="77e-vG-YvJ" firstAttribute="top" secondItem="w5h-op-LbO" secondAttribute="bottom" id="LlF-gk-jQm"/>
+                            <constraint firstItem="77e-vG-YvJ" firstAttribute="top" secondItem="w5h-op-LbO" secondAttribute="bottom" id="sPn-tV-YaD"/>
                         </constraints>
                     </view>
                 </viewController>
